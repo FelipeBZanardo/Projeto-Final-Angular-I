@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ExperienceItemData } from 'src/app/models/experience-item-data.model';
 
 @Component({
   selector: 'app-experiences-item',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./experiences-item.component.css']
 })
 export class ExperiencesItemComponent {
-
+  @Input() public experienceItems!: ExperienceItemData[];
 }

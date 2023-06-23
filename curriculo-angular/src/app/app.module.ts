@@ -6,6 +6,7 @@ import { PhotoComponent } from './components/photo/photo.component';
 import { InformationsComponent } from './components/informations/informations.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SkillItemComponent } from './components/skills/components/skill-item/skill-item.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { SkillItemComponent } from './components/skills/components/skill-item/sk
     PhotoComponent,
     InformationsComponent,
     SkillsComponent,
-    SkillItemComponent
+    SkillItemComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

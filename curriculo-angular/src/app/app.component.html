@@ -1,5 +1,6 @@
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <app-modal-form (hideForm)="onHideForm()" *ngIf="showForm"></app-modal-form>
 
   <!-- The Grid -->
   <div class="w3-row-padding">
@@ -15,7 +16,8 @@
         <div class="w3-container">
           <div *ngFor="let information of data.informations">
             <app-informations [informationItem]="information"></app-informations>
-        </div>
+          </div>
+          <app-send-message (showForm)="onShowForm()"></app-send-message>
           <hr>
           <app-skills [skills]="data.skills"></app-skills>
         </div>

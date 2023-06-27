@@ -8,7 +8,8 @@ import { AppData } from './models/app-data.model';
 })
 export class AppComponent {
   title = 'curriculo-angular';
-
+  showForm: boolean = false;
+  
   public data: AppData = {
     imagePath: 'assets/images/foto-perfil.jpg',
     name: 'Jane Doe',
@@ -31,19 +32,19 @@ export class AppComponent {
       }
     ],
     skills: [
-    {
-      sectionIcon: 'fa-asterisk',
-      sectionTitle: 'Skills',
-      skillItem: [
-        {
-          itemTitle: 'Adobe Photoshop',
-          width: '90%',
-          isWidthVisible: true,
-        },
-        {
-          itemTitle: 'Photography',
-          width: '80%',
-          isWidthVisible: true,
+      {
+        sectionIcon: 'fa-asterisk',
+        sectionTitle: 'Skills',
+        skillItem: [
+          {
+            itemTitle: 'Adobe Photoshop',
+            width: '90%',
+            isWidthVisible: true,
+          },
+          {
+            itemTitle: 'Photography',
+            width: '80%',
+            isWidthVisible: true,
         },
         {
           itemTitle: 'Illustrator',
@@ -78,14 +79,14 @@ export class AppComponent {
         }
       ]
     }
-    ],
-    experiences: [
-      {
-        experienceIcon: 'fa-suitcase',
-        experienceTitle: 'Work Experience',
-        experienceItem: [
-          {
-            experienceSubTitle: 'Front End Developer / w3schools.com',
+  ],
+  experiences: [
+    {
+      experienceIcon: 'fa-suitcase',
+      experienceTitle: 'Work Experience',
+      experienceItem: [
+        {
+          experienceSubTitle: 'Front End Developer / w3schools.com',
             startDate: 'Jan 2015',
             endDate: 'Current',
             content: 'Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.'
@@ -131,4 +132,12 @@ export class AppComponent {
       
     ]
   };
+
+  onShowForm() {
+this.showForm = true;
+  }
+
+  onHideForm() {
+this.showForm = false;
+  }
 }

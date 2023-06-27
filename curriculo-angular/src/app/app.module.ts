@@ -9,6 +9,8 @@ import { SkillItemComponent } from './components/skills/components/skill-item/sk
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { ExperiencesItemComponent } from './components/experiences/components/experiences-item/experiences-item.component';
+import { SendMessageComponent } from './components/send-message/send-message.component';
+import { ModalFormComponent } from './components/modal-form/modal-form.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ExperiencesItemComponent } from './components/experiences/components/ex
     SkillItemComponent,
     FooterComponent,
     ExperiencesComponent,
-    ExperiencesItemComponent
+    ExperiencesItemComponent,
+    SendMessageComponent,
+    ModalFormComponent
   ],
   imports: [
     BrowserModule

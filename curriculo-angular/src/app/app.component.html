@@ -4,14 +4,12 @@
 
   <!-- The Grid -->
   <div class="w3-row-padding">
-  
+
     <!-- Left Column -->
     <div class="w3-third">
-    
+
       <div class="w3-white w3-text-grey w3-card-4">
-        <app-photo
-          [imagePath]="data.imagePath"
-          [name]="data.name">
+        <app-photo [imagePath]="data.imagePath" [name]="data.name">
         </app-photo>
         <div class="w3-container">
           <div *ngFor="let information of data.informations">
@@ -23,7 +21,7 @@
         </div>
       </div><br>
 
-    <!-- End Left Column -->
+      <!-- End Left Column -->
     </div>
 
     <!-- Right Column -->
@@ -31,12 +29,12 @@
 
       <app-experiences [experiences]="data.experiences"></app-experiences>
 
-    <!-- End Right Column -->
+      <!-- End Right Column -->
     </div>
-    
-  <!-- End Grid -->
+
+    <!-- End Grid -->
   </div>
-  
+
   <!-- End Page Container -->
 </div>
 

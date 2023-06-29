@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators,ReactiveFormsModule,RequiredValidator } from '@angular/forms';
 import { Message } from 'src/app/models/message.model';
 
 @Component({

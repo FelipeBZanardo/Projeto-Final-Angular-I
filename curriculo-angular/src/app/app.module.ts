@@ -18,6 +18,7 @@ import { ExperiencesItemComponent } from './components/experiences/components/ex
 import { SendMessageComponent } from './components/send-message/send-message.component';
 import { ModalFormComponent } from './components/modal-form/modal-form.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -50,6 +50,7 @@ export class ModalFormComponent implements OnInit {
 
   public onSubmit(): void {
     this.message = this.contactForm.value;
+    console.log(this.message);
     this.hideForm.emit();
   }
 

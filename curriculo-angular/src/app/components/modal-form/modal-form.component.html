@@ -1,42 +1,29 @@
 <div class="w3-modal w3-animate-opacity w3-show">
   <div class="w3-modal-content w3-card-4 w3-animate-zoom">
     <div class="w3-container">
-      <span
-        class="w3-button w3-display-topright round-btn"
-        (click)="closeModal()"
-        >&times;</span
-      >
+      <span class="w3-button w3-display-topright round-btn" (click)="closeModal()">&times;</span>
       <form class="w3-container" [formGroup]="contactForm" action="submit">
         <div class="w3-section">
-          <mat-label><b>Email</b></mat-label>
-          <input
-            matInput
-            class="w3-input w3-border w3-margin-bottom"
-            type="email"
-            placeholder="your email"
-            formControlName="email"
-            required
-          />
-          <mat-hint>Ex: email@example.com</mat-hint>
-          <mat-error>It needs to be a valid email</mat-error>
+          <mat-form-field appearance="outline">
+            <mat-label><b>Email</b></mat-label>
+            <input matInput class="w3-input w3-border w3-margin-bottom" formControlName="email" />
+            <mat-hint>Ex: email@example.com</mat-hint>
+            <mat-error>It needs to be a valid email</mat-error>
+          </mat-form-field>
+
           <br /><br />
-          <label><b>Message</b></label>
-          <textarea
-            class="w3-input w3-border"
-            rows="5"
-            placeholder="your message here..."
-            formControlName="message"
-          ></textarea>
-          <mat-error
-            >The field must have between 10 and 300 characters</mat-error
-          >
-          <mat-hint align="end">{{ characterCount }} / 300</mat-hint>
-          <button
-            class="w3-button w3-block w3-teal w3-section w3-padding"
-            (click)="onSubmit()"
-            [disabled]="contactForm.invalid"
-            type="submit"
-          >
+
+          <mat-form-field appearance="outline">
+            <mat-label><b>Message</b></mat-label>
+            <textarea matInput class="w3-input w3-border w3-margin-bottom" formControlName="message"></textarea>
+            <mat-hint align="end">{{ characterCount }} / 300</mat-hint>
+            <mat-error>The field must have between 10 and 300 characters</mat-error>
+          </mat-form-field>
+
+          <br /><br />
+
+          <button class="w3-button w3-block w3-teal w3-section w3-padding" (click)="onSubmit()"
+            [disabled]="contactForm.invalid" type="submit">
             Send
           </button>
         </div>

@@ -8,7 +8,7 @@ import { Message } from 'src/app/models/message.model';
   styleUrls: ['./modal-form.component.css'],
 })
 export class ModalFormComponent implements OnInit {
-  @Output() hideForm = new EventEmitter<boolean>();
+  //@Output() hideForm = new EventEmitter<boolean>();
 
   public message?: Message;
   public contactForm!: FormGroup;
@@ -23,7 +23,7 @@ export class ModalFormComponent implements OnInit {
     const required = Validators.required;
 
     this.contactForm = new FormGroup({
-      email: new FormControl(null, [required, Validators.email]),
+      email: new FormControl(null, [required, Validators.email], ),
       message: new FormControl(null, [
         required,
         Validators.minLength(10),
@@ -44,10 +44,10 @@ export class ModalFormComponent implements OnInit {
 
   public onSubmit(): void {
     this.message = this.contactForm.value;
-    this.hideForm.emit();
+    //this.hideForm.emit();
   }
 
   closeModal(): void {
-    this.hideForm.emit();
+   // this.hideForm.emit();
   }
 }

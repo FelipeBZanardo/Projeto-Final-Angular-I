@@ -1,5 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { PhotoComponent } from './components/photo/photo.component';
@@ -12,6 +18,7 @@ import { ExperiencesItemComponent } from './components/experiences/components/ex
 import { SendMessageComponent } from './components/send-message/send-message.component';
 import { ModalFormComponent } from './components/modal-form/modal-form.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,12 +30,18 @@ import { ModalFormComponent } from './components/modal-form/modal-form.component
     ExperiencesComponent,
     ExperiencesItemComponent,
     SendMessageComponent,
-    ModalFormComponent
+    ModalFormComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatDialogModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

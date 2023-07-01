@@ -1,4 +1,12 @@
 <p>
-    <i [ngClass]="informationItem.icon" class="fa fa-fw w3-margin-right w3-large w3-text-teal"></i>
-    {{ informationItem.information }}
+    <ng-container *ngIf="informationItem.href">
+        <a [href]="informationItem.href.concat(informationItem.information)" target="_blank">
+            <i [ngClass]="informationItem.icon" class="fa fa-fw w3-margin-right w3-large w3-text-teal"></i>
+        {{ informationItem.information }}
+        </a>
+    </ng-container>
+    <ng-container *ngIf="!informationItem.href">
+        <i [ngClass]="informationItem.icon" class="profession fa fa-fw w3-margin-right w3-large w3-text-teal"></i>
+        {{ informationItem.information }}
+    </ng-container>
 </p>

@@ -1,10 +1,9 @@
-<p>
-    <ng-container *ngIf="informationItem.href">
-        <a [href]="informationItem.href.concat(informationItem.information)" target="_blank">
-            <app-information-item [informationItem]="informationItem"></app-information-item>
-        </a>
-    </ng-container>
-    <ng-container *ngIf="!informationItem.href">
+<div *ngIf="informationItem.href; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+    <a [href]="informationItem.href?.concat(informationItem.information)" target="_blank">
         <app-information-item [informationItem]="informationItem"></app-information-item>
-    </ng-container>
-</p>
+    </a>
+</ng-template>
+<ng-template #elseBlock>
+    <app-information-item [informationItem]="informationItem"></app-information-item>
+</ng-template>

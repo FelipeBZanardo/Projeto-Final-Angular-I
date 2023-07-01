@@ -1,3 +1,7 @@
-i {
+a {
   padding: 2px;
+}
+
+div {
+  display: inline-block;
 }

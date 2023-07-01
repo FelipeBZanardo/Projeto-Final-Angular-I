@@ -20,15 +20,18 @@ export class AppComponent {
       },
       {
         icon: 'fa-home',
-        information: 'London, UK'
+        information: 'London, UK',
+        href: 'https://www.google.com/maps/place/Londres,+Reino+Unido/@51.5286416,-0.1015987,11z/data=!3m1!4b1!4m6!3m5!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862!16zL20vMDRqcGw?entry=ttu'
       },
       {
         icon: 'fa-envelope',
-        information: 'ex@mail.com'
+        information: 'ex@mail.com',
+        href: 'mailto:'
       },
       {
         icon: 'fa-phone',
-        information: '1224435534'
+        information: '1224435534',
+        href: 'tel:+44'
       }
     ],
     skills: [

@@ -13,7 +13,9 @@
         </app-photo>
         <div class="w3-container">
           <div *ngFor="let information of data.informations">
-            <app-informations [informationItem]="information"></app-informations>
+            <p>
+              <app-informations [informationItem]="information"></app-informations>
+            </p>
           </div>
           <app-send-message (showForm)="onShowForm()"></app-send-message>
           <hr>
@@ -38,4 +40,4 @@
   <!-- End Page Container -->
 </div>
 
-<app-footer></app-footer>
+<app-footer [footerData]="data.footer"></app-footer>

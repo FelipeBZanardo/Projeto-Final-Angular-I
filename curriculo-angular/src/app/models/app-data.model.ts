@@ -1,4 +1,5 @@
 import { ExperienceData } from "./experience-data.model";
+import { FooterData } from "./footer-data.model";
 import { InformationsData } from "./informations-data.model";
 import { SkillData } from "./skill-data.model";
 
@@ -8,4 +9,5 @@ export interface AppData {
     informations: InformationsData[];
     skills: SkillData[];
     experiences: ExperienceData[];
+    footer: FooterData[];
 }

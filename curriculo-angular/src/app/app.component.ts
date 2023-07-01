@@ -79,8 +79,8 @@ export class AppComponent {
         }
       ]
     }
-  ],
-  experiences: [
+    ],
+    experiences: [
     {
       experienceIcon: 'fa-suitcase',
       experienceTitle: 'Work Experience',
@@ -130,6 +130,32 @@ export class AppComponent {
         ]
       },
       
+    ],
+    footer: [
+      {
+        footerIcon: 'fa-facebook-official',
+        footerHref: 'https://pt-br.facebook.com/'
+      },
+      {
+        footerIcon: 'fa-instagram',
+        footerHref: 'https://www.instagram.com/'
+      },
+      {
+        footerIcon: 'fa-snapchat',
+        footerHref: 'https://www.snapchat.com/pt-BR'
+      },
+      {
+        footerIcon: 'fa-pinterest-p',
+        footerHref: 'https://br.pinterest.com/'
+      },
+      {
+        footerIcon: 'fa-twitter',
+        footerHref: 'https://twitter.com/'
+      },
+      {
+        footerIcon: 'fa-linkedin',
+        footerHref: 'https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo'
+      }
     ]
   };
 

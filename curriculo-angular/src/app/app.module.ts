@@ -18,7 +18,7 @@ import { ExperiencesItemComponent } from './components/experiences/components/ex
 import { SendMessageComponent } from './components/send-message/send-message.component';
 import { ModalFormComponent } from './components/modal-form/modal-form.component';
 import { InformationItemComponent } from './components/informations/components/information-item/information-item.component';
-
+import { SuccessDialogComponent } from './components/dialogs/success-dialog/success-dialog.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,8 @@ import { InformationItemComponent } from './components/informations/components/i
     SendMessageComponent,
     ModalFormComponent,
     InformationItemComponent,
+    SuccessDialogComponent,
+    AppComponent,
   ],
   imports: [
     BrowserModule,

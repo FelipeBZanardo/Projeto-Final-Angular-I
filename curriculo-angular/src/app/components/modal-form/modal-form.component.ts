@@ -7,6 +7,8 @@ import {
   RequiredValidator,
 } from '@angular/forms';
 import { Message } from 'src/app/models/message.model';
+import { MatDialog } from '@angular/material/dialog';
+import { SuccessDialogComponent } from 'src/app/components/dialogs/success-dialog/success-dialog.component';
 
 @Component({
   selector: 'app-modal-form',
@@ -14,6 +16,8 @@ import { Message } from 'src/app/models/message.model';
   styleUrls: ['./modal-form.component.css'],
 })
 export class ModalFormComponent implements OnInit {
+  constructor(private dialog: MatDialog) {}
+
   @Output() hideForm = new EventEmitter<boolean>();
 
   public message?: Message;
@@ -51,9 +55,14 @@ export class ModalFormComponent implements OnInit {
     }
   }
 
+  private openSuccessDialog(): void {
+    this.dialog.open(SuccessDialogComponent);
+  }
+
   public onSubmit(): void {
     this.message = this.contactForm.value;
     console.log(this.message);
+    this.openSuccessDialog();
     this.hideForm.emit();
   }
 

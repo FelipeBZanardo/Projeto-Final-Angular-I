@@ -29,7 +29,10 @@ export class ModalFormComponent implements OnInit {
     const required = Validators.required;
 
     this.contactForm = new FormGroup({
-      email: new FormControl(null, [required, Validators.email]),
+      email: new FormControl(null, [
+        required,
+        Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'),
+      ]),
       message: new FormControl(null, [
         required,
         Validators.minLength(10),

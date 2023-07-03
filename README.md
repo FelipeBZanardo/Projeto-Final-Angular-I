@@ -1,7 +1,7 @@
 # Projeto Final - Framework Front End I (Angular)
 > *Turma 938 - Santander Coders - Trilha Web FullStack*
 
-Desenvolvimento de um Currciculum Vitae utilizando Angular.
+Desenvolvimento de um Curriculum Vitae utilizando Angular.
 
 ## ✒️Autores 
 - [Adriano Dias](https://github.com/asdiasx)
@@ -25,6 +25,11 @@ Obs.:
     
 -   O design empregado fica a critério do aluno. Caso prefiram, podem utilizar o template abaixo como referência: 
 Link para a demo do template de referência:  [W3Schools Templates](https://www.w3schools.com/w3css/tryw3css_templates_cv.htm)
+
+## Demonstração
+<p align="center">
+  <img src="./_captures/Demonstracao.gif">
+</p>
 
 ## 📋  Pré-requisitos
 - Ter instalado o **[Node.js®](https://nodejs.org/en)**;
